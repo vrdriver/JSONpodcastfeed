@@ -14,7 +14,7 @@ I also strongly suggest installing getID3 in the same path as well.
 http://getid3.sourceforge.net/
 
 Your path should then look something like this:
-
+```
   \getid3\
   A.mp3
   B.mp3
@@ -22,10 +22,10 @@ Your path should then look something like this:
   json.php
   S.mp3
   T.mp3
-  
+```  
 
 Sample JSON:
-
+```
 {
     "version": "https://jsonfeed.org/version/1",
     "user_comment": "A description of the feed",
@@ -74,7 +74,7 @@ Sample JSON:
 		}
   ]
 }
-
+```
 This script is originally based on the itunes-podcast-feed from Aaron Snoswell, this file creates JSON instread of RSS.
 https://github.com/aaronsnoswell/itunes-podcast-feed
 
