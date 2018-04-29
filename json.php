@@ -132,8 +132,7 @@ if(strlen($getid3_dir) != 0) {
 			{
 				$file_duration = $id3_info["playtime_string"];
 			} else  $file_title  = "";
-		}
-		
+		}		
 		echo $tooutput . "\n";
 		?>
 		{
@@ -154,20 +153,11 @@ if(strlen($getid3_dir) != 0) {
 				}
 			]
 		}
-		<?php
-		 
+		<?php		 
 		$tooutput = ","; 
-		
             }
-	    
-	
-	
-	//echo $val1;
-	
-
         }
         closedir($directory);
- 
         ?> 
 	]
 }
