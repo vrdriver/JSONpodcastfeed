@@ -2,7 +2,9 @@ This JSON feed was created/modified by Stephen Monro 2018.
 bluetomatomedia.com
 
 I know that JSON is currently not really supported much by podcasting software yet, but times are changing, and this is happening.
-Plus, I also needed a solution that could do this, and I couldn't wait until someone else came up with a solution.
+Of all the solutions I found, they were able to import or convert an RSS to JSON. This was no good, as I needed a native non-coversion solution.
+There is no XML in this, and the way of the future looks like it's JSON.
+I also needed a solution that could do this, and I couldn't wait until someone else came up with a solution.
 
 To use:
 Put this file in your path with mp3 files, configure the file and you will then get a json file with a list of the mp3 files.
