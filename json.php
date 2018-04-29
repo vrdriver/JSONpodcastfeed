@@ -138,7 +138,7 @@ if(strlen($getid3_dir) != 0) {
 		{
 			"id": "",
 			"title": "<? echo $file_title; ?>",
-			"url": "http://therecord.co/chris-parrish",
+			"url": "<?php echo $home_page; ?>",
 			"content_text": "",
 			"content_html": "",
 			"summary": "<? echo $file_description; ?>",
