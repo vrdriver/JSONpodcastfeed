@@ -156,7 +156,6 @@ if(strlen($getid3_dir) != 0) {
 		$tooutput = ","; 
             }
         }
-        closedir($directory);
         ?> 
 	]
 }
