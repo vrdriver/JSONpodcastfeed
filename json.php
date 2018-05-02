@@ -89,16 +89,16 @@ if(strlen($getid3_dir) != 0) {
     [
         <?php
 	// <!-- The file listings -->
-        $directory = opendir($files_dir) or die($php_errormsg);
         // Step through file directory
  
 	$tooutput = "";
-	 
-        while(false !== ($file = readdir($directory)))
+        $files = scandir($files_dir);
+        sort($files); 
+    
+        foreach ($files as $file) 
 	{
             $file_path = $files_dir . $file;
             // not . or .., ends in .mp3
- 
 	    
             if(is_file($file_path) && strrchr($file_path, '.') == ".mp3")
 	    {
@@ -114,8 +114,7 @@ if(strlen($getid3_dir) != 0) {
                 if(!is_null($getid3_engine))
 		{
                     $id3_info = $getid3_engine->analyze($file_path);
-                    getid3_lib::CopyTagsToComments($id3_info);
-                    
+                    getid3_lib::CopyTagsToComments($id3_info);                    
                     
                     if(isset($id3_info["comments_html"]["title"][0]))
                     {
