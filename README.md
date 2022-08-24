@@ -11,7 +11,7 @@ Put this file in your path with mp3 files, configure the file and you will then 
 Just remember to look at the config settings in the file, otherwise it won't work correctly.
 
 I also strongly suggest installing getID3 in the same path as well.
-http://getid3.sourceforge.net/
+https://github.com/JamesHeinrich/getID3
 
 Your path should then look something like this:
 ```
